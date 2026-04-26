@@ -1,0 +1,23 @@
+[project]
+name = "payment-agent"
+version = "0.1.0"
+description = "Production-ready payment collection AI agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain",
+    "langchain-openai",
+    "langgraph",
+    "pydantic",
+    "python-dotenv",
+    "requests",
+    "pymongo",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+packages = ["src"]
